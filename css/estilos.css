@@ -1,0 +1,79 @@
+#titulo {
+    margin: 0;
+}
+
+#sub-titulo {
+    margin: 0 0 14px 0;
+}
+
+body {
+    overflow: scroll;
+}
+
+.frase {
+    font-size: 20px;
+    text-align: left;
+}
+
+#erro {
+    color: red;
+    display: none;
+    font-weight: bold;
+    border: solid black 3px;
+}
+
+#spinner {
+    display: none;
+}
+
+.campo-digitacao {
+    font-size: 20px;
+    height: 130px;
+    border: solid 3px black;
+}
+
+.campo-desativado {
+    background-color: lightgrey;
+}
+
+.icones {
+    vertical-align: middle;
+}
+
+.borda-verde {
+    border: solid 3px green;
+}
+
+.borda-vermelha {
+    border: solid 5px red;
+}
+
+#frase-id {
+    width: 40px;
+    border: solid 1px black;
+    padding: 5px;
+}
+
+#usuarios, .select-usuarios {
+    display: inline-block;
+}
+
+.selectize-input {
+    width: 120px;
+}
+
+#botao-sync {
+    float: right;
+}
+
+#contador-caracteres, #contador-palavras, #tamanho-frase, #tempo-digitacao {
+    font-weight: bold;
+    color: red;
+}
+
+.placar {
+    display: none;
+    border: solid 3px black;
+    margin-top: 3em;
+}
+

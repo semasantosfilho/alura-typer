@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Sema Typer</title>
+    <link rel='shortcut icon' href='img\Dez2009(2) crop.jpg' type="image/x-icon">
+    <link rel='stylesheet' href='css/libs/materialize.min.css'>
+    <link rel='stylesheet' href='css/libs/google-fonts.css'>
+    <link rel='stylesheet' href='css/libs/selectize.default.css'>
+    <link rel='stylesheet' href='css/libs/tooltipster.bundle.min.css'>
+    <link rel='stylesheet' href='css/estilos.css'>
+</head>
+<body>
+    <div class='container'>
+        <h1 class='center' id='titulo'>Sema typer</h1>
+        <p class='center' id='sub-titulo'>Teste sua velocidade de digitação</p>
+        <p class='frase center'>O que é o Belo senão o grau do Terrível que podemos suportar pois, impassível, desdenha destruir-nos?</p>
+
+        <div class='center'>
+            <img id='spinner' src="img\spinner.gif" alt='Processando...'>
+            <p id='erro'>Ocorreu um erro, por favor tente novamente</p>
+        </div>
+
+        <ul class='informacoes center'>
+            <li>
+                <i class="small material-icons icones">description</i>
+                <span id='tamanho-frase'>30</span> palavras na frase</li>
+            <li>
+                <i class="small material-icons icones">query_builder</i>
+                <span id='tempo-digitacao'>2</span> segundos para digitar</li>
+        </ul>
+
+        <textarea class='campo-digitacao' rows='8' cols='40'></textarea>
+
+        <div class='botoes'>
+             <a id='botao-reiniciar' class="btn-floating btn-large waves-effect waves-light red tooltip" title='Reiniciar o jogo'><i class="material-icons">restore</i></a>
+
+             <a id='botao-placar' class="btn-floating btn-large waves-effect waves-light green tooltip" title='Exibir/Ocultar o placar'><i class="material-icons">assignment</i></a>
+
+             <a id='botao-frase' class="btn-floating btn-large waves-effect waves-light blue tooltip" title='Carregar frase aleatória'><i class="material-icons">format_align_justify</i></a>
+
+             <a id='botao-frase-id' class="btn-floating btn-large waves-effect waves-light cyan tooltip" title='Buscar a frase com id selecionado ao lado'><i class="material-icons">repeat_one</i></a>
+
+             <input type='number' id='frase-id' min ='0'></input>
+
+             <div class='select-usuarios'>
+                <select id = 'usuarios' title='Selecione o usuário'>
+                    <option value='Sema'>Sema</option>
+                    <option value='Rodolfo'>Rodolfo</option>
+                    <option value='Otávio'>Otávio</option>
+                    <option value='Clara'>Clara</option>
+                    <option value='Betânia'>Betânia</option>
+                    <option value='Sofia'>Sofia</option>
+                </select>
+            </div>
+
+             <a id='botao-sync' class="btn-floating btn-large waves-effect waves-light yellow tooltip-custom" title='Placar gravado no servidor'><i class="material-icons">sync</i></a>
+        </div>
+       
+
+        <ul class='center'>
+            <li><span id='contador-caracteres'>0</span> caracteres digitados</li>
+            <li><span id='contador-palavras'>0</span> palavras digitadas</li>
+        </ul>
+
+        <section class='placar'>
+            <h4 class=center>Placar</h4>
+            <table class='centered bordered'>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Nº de palavras</th>
+                        <th>Remover</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </section>
+
+
+    </div>
+
+    <script src='js/jquery.js'></script>
+    <script src='js/main.js'></script>
+    <script src='js/placar.js'></script>
+    <script src='js/frase.js'></script>
+    <script src='js/selectize.js'></script>
+    <script src='js/tooltipster.bundle.min.js'></script>
+
+</body>
+</html>
